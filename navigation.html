@@ -1,0 +1,133 @@
+<!doctype html>
+
+<html lang="en">
+   <head>
+
+        <meta charset="utf-8">
+      <title>Blake McCann - ePortfolio</title>
+        <link rel="stylesheet" href="css/navigation.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+
+   <body>
+
+     <header>
+<nav class="navbar">
+<span class="navbar-toggle" id="js-navbar-toggle">
+<span class="fas fa-bars">
+
+</span>
+</span>
+
+	<a href="#" class="home">Home</a>
+	<ul class="main-nav" id="js-menu">
+		<li> <a href="javascript.html" class="nav-links">JavaScript</a></li>
+		<li> <a href="contact.html" class="nav-links">Contact</a></li>
+		<li> <a href="#" class="nav-links">Navigation</a></li>
+	</ul>		
+</nav>
+
+<h1>Navigation Menu Gallery</h1>
+
+    </header>
+    <main>
+
+<h2>Vertical Navigation Bar</h2>
+<!--Code vertical navigation bar here-->
+
+
+<nav id="vertical_nav">
+
+   <ul>
+	<li><a href="#">Home</a></li>
+	<li><a href="#">About</a></li>
+	<li><a href="#">Gallery</a></li>
+	<li><a href="#">Shop</a></li>
+        <li><a href="#">Contact</a></li>
+   </ul>
+</nav>
+<br>
+<p>The vertical navigation bar was created using both HTML and CSS. In HTML I used a nav element with an id of vertical_nav as a wrapper around the unordered list. Being able to use the id is critical as it is what is around all the other elements. I first removed the margin and padding from the nav element with the id vertical_nav. Next I removed the bullets from the unordered list as well as set the width to 20&#37;. For each list item the position was set to relative. For each link I set the width to 100&#37;, color to &#35;ffffff, I added a linear-gradient as the background image and used five different colors. I set the display to flex, height to 64px, and font-family of Arial, Helvetica, and sans-serif. Next I centered the text with justify-content center and alighted the items with align-items center. I removed the line under the link as well with text-decoration none. When the link is hovered over the linear-gradient will gradually change. It utilizes three of the five colors from the non-hover state. I utilized the tool on w3schools.com to aid in picking a color gradient as well the same website to pick the font-family. Vertical navigation bars can be useful in a lot of applications. One that comes to mind is for a mobile site. I find sites with large vertical navigation bars to be easy to navigate.</p>
+
+<h2>CSS Drop Down Menu</h2>
+<!--Code dropdown navigation bar here-->
+
+<nav id="drop_nav">
+   <ul>
+	<li><a href="#">Home</a></li>
+	<li><a href="#">Tops<span class="arrow">&#x25bc;</span></a>
+	
+		<ul class="submenu">
+			<li><a href="#">Short Sleeve Shirts</a></li>
+			<li><a href="#">Long Sleeve Shirts</a></li>
+			<li><a href="#">Dress Shirts</a></li>
+		</ul>
+	</li>
+	<li><a href="#">Bottoms<span class="arrow">&#x25bc;</span></a>
+	
+		<ul class="submenu">
+			<li><a href="#">Shorts</a></li>
+			<li><a href="#">Blue Jeans</a></li>
+			<li><a href="#">Dress Pants</a></li>
+		</ul>
+	</li>
+	<li><a href="#">Shoes<span class="arrow">&#x25bc;</span></a>
+	
+		<ul class="submenu">
+			<li><a href="#">Athletic</a></li>
+			<li><a href="#">Casual</a></li>
+			<li><a href="#">Dress</a></li>
+		</ul>
+	</li>
+        <li><a href="#">Contact</a></li>
+
+
+        <li><a href="#">FAQ</a></li>
+   </ul>
+</nav>
+<br>
+<br>
+
+<p>
+The drop down menu was created using a nested unordered list. This is where a list item in the unordered list is also an unordered list. ASCII characters can be added within the list item to display an arrow. The menus are set to expand when the mouse hovers over one of the list items. There is also a hover effect to display which option the mouse is currently hovered over.    
+</p>
+
+<br>
+<br>
+<br>
+
+<h2>Navigation Bar Tabs</h2>
+<!--Code tabbed navigation bar here-->
+
+<nav id="tabs_nav">
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Gallery</a></li>
+<li><a href="#">Shop</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+</nav>
+<br>
+<br>
+
+<p>
+I enjoyed creating this tabbed navigation bar, I found it both fun and challenging. The navigation bar or nav bar utilizes a wrapper element with the id tabs_nav. This is used to contain the elements of the nav bar. The unordered list is set to 90&#37; width and display flex. Meaning it will fill 90&#37; of the screen no matter the size of the screen and its children elements will be formatted for flex context. The width of the list items is set to fill 100&#37; of the unordered list text is aligned in the center and position is relative of its original position. The links were then given a border radius on the top, the z-index was set and display was set to flex in order to add space-around property to justify-content and center align-items. The hover state is probably my favorite part. The margin for the top was set to -10px allowing the element to move up 10pxs. The padding at the bottom was added to make the link look as if it was only growing at the top. The margins left and right extend out to add the effect that it is overlapping the other link. Finally the z-index is set to one higher than the non-hover state links. This allows it to appear on top of the links on either side of it. I used a color wheel to pick my initial color and it also had the option of picking a harmony, options included the complementary, monochromatic, analogous and more. This nav bar looks like it could be very useful in a lot of places. One I think would be great would be, within topics that have a few sub topics. Such as different tips of Chocolate the tabs would be Milk Chocolate, Dark Chocolate, White Chocolate, Semisweet Chocolate and so on.       
+</p>
+
+
+
+    </main>
+
+    <footer>
+     <p>&#169; 2022 Blake McCann</p>
+    </footer>
+<script>
+let mainNav = document.getElementById('js-menu');
+let navBarToggle = document.getElementById('js-navbar-toggle');
+navBarToggle.onclick = function(){
+mainNav.classList.toggle('active');
+};
+</script>
+    </body>
+</html>

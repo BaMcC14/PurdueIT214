@@ -1,0 +1,207 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+
+body {
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	color: #494747;
+	font-size: 1em;
+	background-color:#013252;
+	background: linear-gradient(to right bottom, #56a2d4, #013252);
+}
+
+
+header {
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #013252;
+	color: #56a2d4;
+	width: 75%;
+	
+	
+	
+}
+
+
+nav {
+	color: #56a2d4;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #013252;
+	margin-bottom: 0;
+	border-radius: 10px;
+	width: 75%
+
+}
+
+
+nav ul {
+	list-style-type: none;
+	display: flex;
+	flex-direction: row;
+	padding: 0;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+
+nav ul li {
+	text-align: center;
+	width: 100%;
+	justify-content: space-evenly;	
+}
+
+
+nav ul li a:link, nav ul li a:visited {
+	display: flex;
+	text-decoration: none;
+	background-color: #aee2fa;
+	color: #013252;
+	border-radius: 10px 10px 0 0;
+	font-weight: bold;
+	width: 100%;
+	padding: 20px;
+	padding-right:50px;
+	padding-left: 50px;
+	
+	justify-content: center;
+	
+}
+
+
+nav ul li a:hover {
+	background-color: #3d81ae;
+	color: #013252;
+}
+
+main {
+	color: #013252;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #aee2fa;
+	width: 75%;
+	padding-top: 10px;
+	
+}
+
+footer {
+	color: #56a2d4;
+	font-size: 14px;
+	margin-left: auto;
+	margin-right: auto;
+	height: 40px;
+	background-color: #013252;
+	
+}
+
+
+
+section {
+	display: flex;
+	flex-wrap: wrap;
+	
+	
+}
+
+article {
+	float: left;
+	width: 33%;
+	padding-left: 10px;
+	
+}
+
+h1 {
+	color: #56a2d4;
+	text-align: center;
+	
+}
+
+h2 {
+	color: #2c61aa;
+	text-align: center;
+}
+
+figure{
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
+figure img {
+	width: 100%;
+	height: auto;
+
+	
+}
+
+header, main, footer {
+	text-align: center;
+}
+@media(max-width: 799px) {
+article{
+	
+	width: 50%;
+}
+
+nav ul {
+
+	margin-bottom: 0;
+	margin-top: 0;
+	width: 30%;	
+}
+
+nav {
+	width: 75%;
+	margin: 0;
+	margin-left: auto;
+	margin-right: auto;	
+}
+
+nav ul li a:link, nav ul li a:visited {
+	padding: 10px 10px 10px 10px;	
+}
+
+header, main, footer {
+	text-align: center;
+}
+}
+
+
+@media(max-width: 396px) {
+article {
+	flex-direction: column;
+	width: 100%;
+	
+}
+
+nav ul {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 10px;
+	border-radius: 10px;
+}
+
+nav ul li a:link, nav ul li a:visited {
+	border-radius: 0px 0px;
+	padding: 10px 0px 10px 0;
+}
+
+nav ul li:first-child a,nav ul li a:visited {
+	border-radius: 10px 10px 0px 0px;
+}
+
+nav ul li:last-child a,nav ul li a:visited {
+	border-radius: 0px 0px 10px 10px;
+
+}
+
+header, main, footer {
+	text-align: center;
+}
+
+}
